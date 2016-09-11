@@ -302,6 +302,8 @@ body {
     text-transform: uppercase;
     background: #7323dc;
     opacity: 0.8;
+    color: #fff !important;
+    outline: none;
 }
 
 .subscribe #mc_embed_signup .button:hover {
