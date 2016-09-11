@@ -327,6 +327,9 @@ body {
     border-right: 1px solid #fff;
     padding: 0 9px;
 }
+.info span a{
+    color: #fff;
+}
 
 .info span.no-border {
     border: 0px;
