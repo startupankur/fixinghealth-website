@@ -28,11 +28,12 @@ body {
 .navbar {
     position: absolute;
     width: 100%;
+    z-index: 9;
 }
 
 .navbar>.container .navbar-brand,
 .navbar>.container-fluid .navbar-brand {
-    color: #fff;
+    color: #000;
 }
 
 .navbar-right {
@@ -40,15 +41,16 @@ body {
 }
 
 .navbar-nav>li>a {
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
     padding: 5px 5px 2px;
     margin: 0 10px;
 }
 
 .navbar-nav>li>a.touch {
-    border: 3px solid #7323dc;
+    border: 2px solid #32b594;
+    margin-top: -2px;
 }
 
 .nav>li>a:hover,
@@ -56,7 +58,9 @@ body {
     background: transparent;
     border-bottom: 3px solid #7323dc;
 }
-
+.navbar-brand{
+    color: #fff;
+}
 .navbar-brand ul li {
     padding: 0;
     width: 22px;
@@ -73,30 +77,38 @@ body {
     text-align: center;
     line-height: 30px;
     font-size: 15px;
-    background: #b0ddff;
+    background: #4CCEAD;
     letter-spacing: 1px;
-    color: #7323dc;
+    color: #fff;
     font-weight: bold;
 }
 
 .logo-txt {
     font-size: 20px;
-    color: #fff;
     margin-left: 5px;
 }
 
 
 /* ---home-landing-page ---*/
-
-.home {
-    background: url("../assets/landing.jpg") center/cover;
+.home{
+    background: #fafafa;
+    position: relative;
+    height: 70%;
+    border-bottom: 1px solid #eee;
+}
+.home-bg {
+    background: url("../assets/cover.png") center/cover;
     height: 100%;
+    opacity: 0.05;
 }
 
 .home .outer {
+    position: absolute;
+    z-index: 1;
     display: table;
     width: 100%;
     height: 100%;
+    top: 0;
 }
 
 .home-heading {
@@ -107,7 +119,7 @@ body {
 
 .home h2 {
     margin: 0 auto;
-    color: #fff;
+    color: #7323dc;
     font-family: Roboto Condensed;
     font-size: 40px;
     word-spacing: 3px;
@@ -117,10 +129,10 @@ body {
 
 .home h3 {
     margin: 0 auto;
-    color: #EEE5DE;
+    color: #000;
     font-size: 27px;
-    padding-top: 15px;
-    font-weight: 400;
+    padding-top: 25px;
+    font-weight: 100;
 }
 
 .home .text {
@@ -149,12 +161,17 @@ body {
     border: none;
     padding: 12px 22px;
     left: 45%;
-    font-size: 21px;
+    font-size: 20px;
     color: #fff;
-    margin-top: 35px;
-    background: #7323dc;
+    margin-top: 65px;
+    background: #4CCEAD;
+    border: 1px solid #e1e1e1;
+    border-width: 0 0 3px 0;
+    border-color: #32b594;
     transition: all 0.23s ease-in-out 0s;
+    outline: none;
     opacity: 0.8;
+    font-weight: bold;
 }
 
 .subscribe-btn:hover {
